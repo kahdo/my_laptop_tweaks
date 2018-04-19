@@ -1,0 +1,12 @@
+# Start Syndaemon to monitor and disable touchpad while i'm typing.
+
+# Syndaemon, 0.2 delay, disable tapping only, ignore activity for modifier keys and modifier combos
+/usr/bin/syndaemon -d -i 0.6 -t -K -R
+
+synclient PalmDetect=1
+synclient PalmMinWidth=7
+synclient PalmMinZ=90
+
+# Enable horizontal scroll
+synclient HorizTwoFingerScroll=1
+
